@@ -68,7 +68,6 @@ function runner() {
 	var theLinks = getLinksArray(linkArray, allLinks);
 	upvotes(allLinks);
 	setTimeout(newTabs, 2000, theLinks);
-	newTabs(theLinks);
 }
 
 function semiRunner(){
