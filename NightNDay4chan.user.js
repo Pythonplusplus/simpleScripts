@@ -2,7 +2,7 @@
 // @name        4chan Day and Night
 // @namespace   jBlue
 // @description Changes themes depending on the time
-// @version     1.0.0
+// @version     1.1
 // @match        *://boards.4chan.org/*
 // @match        *://sys.4chan.org/*
 // @match        *://a.4cdn.org/*
@@ -28,33 +28,20 @@ function lightMode() {
 	document.getElementById("oneechan-options").children[2].children[0].click();
 }
 
-function lightCheck(){
+function themeCheck(){
 	var t = new Date();
-	var sfwTest = window.getComputedStyle(document.body).getPropertyValue("background-image").split("url(")[1].split(")")[0].replace(/"/g, "");
-	if (sfwTest !== "http://i.imgur.com/uvqosDO.png" && sfwTest !== "http://i.imgur.com/C93G8sl.png") {
-		if (t.getHours() >= 7 && t.getHours() <= 18 && sfwTest !== "http://i.imgur.com/uvqosDO.png") {
-			lightMode();
-		}else if (t.getHours() >= 7 && t.getHours() <= 18 && sfwTest !== "http://i.imgur.com/C93G8sl.png"){
-			lightMode();
-		}else{
-			darkCheck();
-		}
-	}else{
-		darkCheck();
+	var headBar = window.getComputedStyle(document.getElementById("header-bar")).getPropertyValue("background").split("rgba(")[2].split(")")[0];
+	var lightTheme = "227, 231, 232, 0.901961";
+	var darkTheme = "40, 42, 46, 0.901961";
+	
+	//checking if light theme is still on
+	if (headBar == lightTheme && t >= 18 || t <= 7){
+		nightMode();
+		
+	//checking if dark theme is still on
+	}else if (headBar == darkTheme && t <= 18 || t >= 7){
+		lightMode();
 	}
-}
-
-function darkCheck(){
-	var t = new Date();
-	var sfwTest = window.getComputedStyle(document.body).getPropertyValue("background-image").split("url(")[1].split(")")[0].replace(/"/g, "");
-	if (sfwTest === "http://i.imgur.com/uvqosDO.png" || sfwTest === "http://i.imgur.com/C93G8sl.png") {
-		if (t.getHours() >= 18 || t.getHours() <= 7 && sfwTest === "http://i.imgur.com/uvqosDO.png") {
-			nightMode();
-		}else if (t.getHours() >= 18 || t.getHours() <= 7 && sfwTest === "http://i.imgur.com/C93G8sl.png") {
-			nightMode();
-		}
-	}
-}
 
 function nightAndDay(){
 	(function loop() {
@@ -70,5 +57,5 @@ function nightAndDay(){
 	})();
 }
 
-setTimeout(lightCheck, 1000);
+setTimeout(themeCheck, 1000);
 nightAndDay();
