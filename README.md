@@ -31,6 +31,6 @@ for the sauce for me. Not sure how I'll go about displaying/saving the sauce inf
 
 Click the link to install with Tampermonkey (Chrome) or Greasemonkey (Firefox)
 
-<a href="https://github.com/Pythonplusplus/simpleScripts/NightNDay4chan.user.js">Night and Day 4chan</a>
+<a href="https://github.com/Pythonplusplus/simpleScripts/raw/master/NightNDay4chan.user.js">Night and Day 4chan</a>
 
-<a href="https://github.com/Pythonplusplus/simpleScripts/RedditUpvotesNLinks.user.js">Reddit Upvote & Links</a>
+<a href="https://github.com/Pythonplusplus/simpleScripts/raw/master/RedditUpvotesNLinks.user.js">Reddit Upvote & Links</a>
