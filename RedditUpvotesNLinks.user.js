@@ -3,7 +3,7 @@
 // @namespace   jBlue
 // @description Upvotes all links and opens them in new tabs
 // @include     https://www.reddit.com/*
-// @version     1.0.3.1
+// @version     1.0.3.2
 // @grant       none
 // ==/UserScript==
 
@@ -47,10 +47,11 @@ function upvotes(someArr) {
 }
 
 function up(toBeClicked) {
-	setTimeout(function(){
-		toBeClicked.click();
-	}, 1000);
-	
+	(function(n) {
+		setTimeout(function(){
+			n.click();
+		}, 1000);	
+	}(toBeClicked));
 }
 
 function newTabs(theL) {
