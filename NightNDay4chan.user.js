@@ -2,7 +2,7 @@
 // @name        4chan Day and Night
 // @namespace   jBlue
 // @description Changes themes depending on the time
-// @version     1.2
+// @version     1.0.0
 // @match        *://boards.4chan.org/*
 // @match        *://sys.4chan.org/*
 // @match        *://a.4cdn.org/*
