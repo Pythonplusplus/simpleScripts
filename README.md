@@ -12,15 +12,13 @@ if you tweak the code:
 
 <b>The reddit one</b> should work for everyone. What it basically does is work on these two keybinds: 
 
-- SHIFT + u: Upvotes all links on a reddit link page (not a comment thread yet) and opens links in new tabs (experimental)
+- SHIFT + u: Upvotes all links on a reddit link page (not a comment thread yet) and opens links in new tabs
 
 - SHIFT + i: Just upvotes all links on a reddit link page
 
-I'd advise against using it right now since I'm experimenting with opening links in
-new tabs. I sometimes switch between Firefox and Chrome, and right now, I'm working on links under Chrome. New tabs isn't working
-on Chrome, but I think I'll probably get it working like it somehow works on Firefox. The code used for Firefox was a simple 
-<b>open("http://blah")</b> since in my Firefox settings, new links would be opened in new tabs, but when I tried it on Chrome,
-it would open links in new windows. The main purpose was to automatically upvote and open links 
+As of June 15th, 2016, the function that handles new tabs works flawlessly. Code was kindly used from <a href="https://stackoverflow.com/a/11389138">here.</a> <i>A word of caution: If you are on Chrome 41+, it may not work for you, but as on my current build that is <b>44.0.2403.39 (Official Build) beta-m (64-bit),</b> I haven't had any issues yet. <b>ALSO, </b> this script probably won't work for Firefox when trying to open links. If you do either of the keybinds, you will probably just see the script upvote the posts.</i>
+
+The main purpose was to automatically upvote and open links 
 <a href="https://www.reddit.com/user/Sn1pe/m/nsfwheaven">on my <b>NSFW</b> multireddit</a> so I could show my appreciation and search
 for the ultimate sauce of the content posted. 
 
