@@ -3,7 +3,7 @@
 // @namespace   jBlue
 // @description Upvotes all links and opens them in new tabs
 // @include     https://www.reddit.com/*
-// @version     1.0.1
+// @version     1.0.2
 // @grant       none
 // ==/UserScript==
 
