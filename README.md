@@ -17,12 +17,20 @@ if you tweak the code:
 - SHIFT + i: Just upvotes all links on a reddit link page
 
 I'd advise against using it right now since I'm experimenting with opening links in
-new tabs. I sometimes switch between FireFox and Chrome, and right now, I'm working on links under Chrome. New tabs isn't working
-on Chrome, but I think I'll probably get it working like it somehow works on FireFox. The code used for FireFox was a simple 
-<b>open("http://blah")</b> since in my FireFox settings, new links would be opened in new tabs, but when I tried it on Chrome,
+new tabs. I sometimes switch between Firefox and Chrome, and right now, I'm working on links under Chrome. New tabs isn't working
+on Chrome, but I think I'll probably get it working like it somehow works on Firefox. The code used for Firefox was a simple 
+<b>open("http://blah")</b> since in my Firefox settings, new links would be opened in new tabs, but when I tried it on Chrome,
 it would open links in new windows. The main purpose was to automatically upvote and open links 
 <a href="https://www.reddit.com/user/Sn1pe/m/nsfwheaven">on my <b>NSFW</b> multireddit</a> so I could show my appreciation and search
 for the ultimate sauce of the content posted. 
 
 Since this script was motivated by NSFW content, part of me wants to add in a function to it that goes a step further by searching 
 for the sauce for me. Not sure how I'll go about displaying/saving the sauce info, but...I'll find a way ;)
+
+#Install Links
+
+Click the link to install with Tampermonkey (Chrome) or Greasemonkey (Firefox)
+
+<a href="https://github.com/Pythonplusplus/simpleScripts/blob/master/NightNDay4chan.user.js">Night and Day 4chan</a>
+
+<a href="https://github.com/Pythonplusplus/simpleScripts/blob/master/RedditUpvotesNLinks.user.js">Reddit Upvote & Links</a>
