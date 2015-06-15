@@ -42,6 +42,7 @@ function themeCheck(){
 	}else if (headBar == darkTheme && t <= 18 || t >= 7){
 		lightMode();
 	}
+}
 
 function nightAndDay(){
 	(function loop() {
