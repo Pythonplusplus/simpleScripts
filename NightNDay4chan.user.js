@@ -2,7 +2,7 @@
 // @name        4chan Day and Night
 // @namespace   jBlue
 // @description Changes themes depending on the time
-// @version     1.1.6
+// @version     1.1.7
 // @match        *://boards.4chan.org/*
 // @match        *://sys.4chan.org/*
 // @match        *://a.4cdn.org/*
@@ -33,14 +33,16 @@ function themeCheck(){
 	var headBar = window.getComputedStyle(document.getElementById("header-bar")).getPropertyValue("background").split("rgba(")[2].split(")")[0];
 	console.log(headBar);
 	var lightTheme = "227, 231, 232, 0.901961";
+	var lightTheme2 = "240, 224, 214, 0.901961";
 	var darkTheme = "40, 42, 46, 0.901961";
+	var darkTheme2 = "26, 26, 26, 0.901961";
 	
 	//checking if light theme is still on
-	if (headBar === lightTheme && t.getHours() > 17 || t.getHours() < 7){
+	if ((headBar === lightTheme || headBar === lightTheme2) && (t.getHours() > 17 || t.getHours() < 7)){
 		nightMode();
 		
 	//checking if dark theme is still on
-	}else if (headBar === darkTheme && t.getHours() > 6 && t.getHours() < 18){
+	}else if ((headBar === darkTheme || headBar === darkTheme2) && (t.getHours() > 6 && t.getHours() < 18)){
 		lightMode();
 	}
 }
