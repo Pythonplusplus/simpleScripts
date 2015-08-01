@@ -16,7 +16,7 @@ if you tweak the code:
 
 - SHIFT + i: Just upvotes all links on a reddit link page
 
-As of August 1st, making script only work in Firefox mainly since I'm probably the only one using it.
+As of August 1st, made this script work in both Firefox and Chrome.
 
 The main purpose was to automatically upvote and open links 
 <a href="https://www.reddit.com/user/Sn1pe/m/nsfwheaven">on my <b>NSFW</b> multireddit</a> so I could show my appreciation and search
