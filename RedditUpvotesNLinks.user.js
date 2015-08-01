@@ -99,12 +99,19 @@ function semiRunner(){
 	upvotes(allLinks);
 }
 
+function kdecay(){
+	open("http://www.karmadecay.com/r/" + window.location.href.split("/r/")[1]);
+}
+
 function doc_keyUp(e){
 	if (e.shiftKey && e.keyCode == 73){
 		semiRunner();
 		
 	}else if (e.shiftKey && e.keyCode == 85) {
 		runner();
+		
+	}else if (e.shiftKey && e.keyCode == 75){
+		kdecay();
 	}
 }
 
