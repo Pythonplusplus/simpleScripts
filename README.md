@@ -16,7 +16,7 @@ if you tweak the code:
 
 - SHIFT + i: Just upvotes all links on a reddit link page
 
-As of June 15th, 2016, the function that handles new tabs works flawlessly. Code was kindly used from <a href="https://stackoverflow.com/a/11389138">here.</a> <i><b>A word of caution:</b> If you are on Chrome 41+, it may not work for you, but as on my current build that is <b>44.0.2403.39 (Official Build) beta-m (64-bit),</b> I haven't had any issues yet. <b>ALSO, </b> this script probably won't work for Firefox when trying to open links. If you do either of the keybinds, you will probably just see the script upvote the posts.</i>
+As of August 1st, making script only work in Firefox mainly since I'm probably the only one using it.
 
 The main purpose was to automatically upvote and open links 
 <a href="https://www.reddit.com/user/Sn1pe/m/nsfwheaven">on my <b>NSFW</b> multireddit</a> so I could show my appreciation and search
