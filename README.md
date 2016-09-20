@@ -35,4 +35,4 @@ Click the link to install with Tampermonkey (Chrome) or Greasemonkey (Firefox)
 
 <a href="https://github.com/Pythonplusplus/simpleScripts/raw/master/RedditUpvotesNLinks.user.js">Reddit Upvote & Links</a>
 
-<a href="https://raw.githubusercontent.com/Pythonplusplus/simpleScripts/master/googleImagesDL">Google Images Downloader</a>
+<a href="https://github.com/Pythonplusplus/simpleScripts/raw/master/googleImagesDL.user.js">Google Images Downloader</a>
