@@ -1,0 +1,67 @@
+// ==UserScript==
+// @name        Download Google Images
+// @namespace   jBlue
+// @description Download all images in a Google Image search page
+// @include     https://images.google.com/*
+// @version     1.0.0
+// @grant       none
+// == UserScript==
+
+
+// adds a listener that listens for shift + i keys
+document.addEventListener("keyup", doc_keyUp, false);
+
+
+// Checks if shift + i key were pressed
+function doc_keyUp(e){
+	if (e.shiftKey && e.keyCode == 73){
+		runner();
+	}
+}
+
+// runs the entire program
+function runner(){
+	var allDownloads = getAllLinks();
+	downloadLinks(allDownloads);
+}
+
+
+//http%3A%2F%2Fcdn.collider.com%2Fwp-content%2Fuploads%2F2016%2F03%2Fbatman-vs-superman-ben-affleck-henry-cavill.jpg
+
+// gathers all of the links
+function getAllLinks(){
+	var lar = [];
+	var allLinks = doucment.getElementById("rg_s").children;
+
+	for (var l = 0; l < allLinks.length; l++){
+		var classSearch = document.getElementsByClassName("rg_l");
+		
+		var imgLink = "http://images.google.com" + classSearch[0].getAttribute("href");
+		console.log("imgLink: " + imgLink)
+		
+		var imgURL = imgLink.split("imgurl\\=")[1];
+		console.log("imgURL: " + imgURL);
+		
+		var imgParsed = imgURL.split("\\&imgrefurl")[0];
+		console.log("imgParsed: " + imgParsed);
+		
+		var imgCleaned = imgParsed.replace(/%3/g, ":").replace(/%2/g, "/");
+		console.log("imgCleaned: " + imgCleaned);
+		
+	}
+}
+
+// downloads all of the links one by one
+function downloadLinks(linkArray){
+	for (var i = 0; i < linkArray.length; i++){
+		download(linkArray[i]);
+	}
+}
+
+// downloads a link
+function download(someLink){
+	
+	
+	
+}
+
